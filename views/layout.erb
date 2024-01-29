@@ -1,12 +1,79 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Sinatra Template</title>
+    <title>Latin Is For the Birds</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <style type="text/css">
+      body {
+        background-color: #c9bbbb;
+        font-family: Avenir;
+      }
+
+      h1 {text-align: center;}
+      p {text-align: center;}
+      div {text-align: center;}
+      form {text-align: center;}
+
+      .header_div {
+        display: flex;
+        flex-direction:row;
+      }
+
+      #header {
+        font-size: xxx-large;
+        font-weight: bolder;
+        color: #703e3e;
+        padding-top: 50px;
+        flex-shrink: 0;
+      }
+
+      #emoji_right {
+        font-size: 100px;
+        text-align: left;
+        margin: 15px;
+        width: 100%;
+      }
+
+      #emoji_left {
+        font-size: 100px;
+        text-align: right;
+        margin: 15px;
+        width: 100%;
+      }
+
+      .font {
+        font-family: Avenir;
+      }
+
+      .font_small {
+        font-family: Avenir;
+        font-size: small;
+      }
+
+      .font_large {
+        font-family: Avenir;
+        font-size: larger;
+      }
+
+      .search {
+        color: #50838c;
+      }
+
+    </style>
+
   </head>
 
   <body>
+    <div class="header_div">
+      <div id="emoji_left">&#129417;</div>
+      <div id="header">Latin Is For The Birds</div>
+      <div id="emoji_right">&#128019;</div>
+    </div>
+
+    <p><b> Do you know the common name of this bird? </b></p>
+    <br>
     <%= yield %>
   </body>
 </html>

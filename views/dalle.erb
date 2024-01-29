@@ -1,0 +1,10 @@
+<p><u> Latin Name </u></p>
+<p class="font_large"> <%= @latin_name_sample %> </p>
+<p><u> Picture by Dall-E </u></p>
+<p class="font_small"><i> Note: picture generated may not be 100% accurate </i><p>
+<div><img src="<%= @image_url %>"></div>
+<form action="/location" method="post">
+  <button class="font" type="submit">Hint: Here is where you might see this bird</button>
+</form>
+<br><br>
+<div><b><a class="search" href="/">New Latin Name</a></b></div>
